@@ -1,0 +1,15 @@
+<html>
+<body>
+
+<h2 id="t">10</h2>
+<button onclick="clearInterval(i),t.innerHTML=10,i=setInterval(()=>{t.innerHTML--;
+    if(t.innerHTML==0)clearInterval(i),alert('Time up!')},1000)">
+Start
+</button>
+
+<script>
+let i;
+</script>
+
+</body>
+</html>
