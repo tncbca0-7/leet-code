@@ -1,9 +1,3 @@
-const EventEmitter = require('events');
-
-const chatEmitter = new EventEmitter();
-
-chatEmitter.on('User Joined', (username, userId) => {
-    console.log(`${username} (ID: ${userId}) has joined the chat.`);
-});
-
-chatEmitter.emit('User Joined', 'Yaseen', 42);
+const e=new(require('events'))();
+e.on('User Joined',(u,i)=>console.log(`${u} (ID:${i}) has  joined the chat`));
+e.emit('User Joined','abdul aziz',46);
